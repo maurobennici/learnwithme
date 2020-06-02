@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewData["Title"] = "View";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    var user = User.Identity;
+}
+
+<h1>Admin Page</h1>
+
+<p>Welcome @user.Name</p>
+<p>You are IN!!</p>
+
+<br />
+<br />
+
+@Html.ActionLink("Log Out", "Logoff", "Login")
